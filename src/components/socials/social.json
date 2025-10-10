@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_socials_socials",
+  "info": {
+    "displayName": "social",
+    "icon": "message"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "github",
+        "linkedin",
+        "portfolio",
+        "facebook",
+        "email",
+        "phone",
+        "common_link"
+      ]
+    }
+  },
+  "config": {}
+}

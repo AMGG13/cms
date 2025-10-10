@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_projects_projects",
+  "info": {
+    "displayName": "project",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "long_description": {
+      "type": "blocks"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "skill_badgets": {
+      "type": "component",
+      "component": "badgets.skill",
+      "repeatable": true
+    },
+    "url_github": {
+      "type": "string"
+    },
+    "url_deploy": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

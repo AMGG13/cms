@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_experiences_professional_experiences",
+  "info": {
+    "displayName": "Professional Experience",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "long_description": {
+      "type": "blocks"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_badgets_roles",
+  "info": {
+    "displayName": "Role",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "Role": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

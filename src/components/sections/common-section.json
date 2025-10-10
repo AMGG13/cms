@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_common_sections",
+  "info": {
+    "displayName": "common_section"
+  },
+  "options": {},
+  "attributes": {
+    "section_title": {
+      "type": "string"
+    },
+    "id_section": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

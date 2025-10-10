@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personal_infoformations",
+  "info": {
+    "singularName": "personal-infoformation",
+    "pluralName": "personal-infoformations",
+    "displayName": "Personal Infoformation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "component",
+      "component": "badgets.role",
+      "repeatable": true
+    },
+    "country": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "social": {
+      "type": "component",
+      "component": "socials.social",
+      "repeatable": true
+    },
+    "professional_profile": {
+      "type": "text"
+    },
+    "experience": {
+      "type": "component",
+      "component": "experiences.professional-experience",
+      "repeatable": true
+    },
+    "skills": {
+      "type": "component",
+      "component": "skills.technical-skills",
+      "repeatable": true
+    },
+    "educations": {
+      "type": "component",
+      "component": "educations.education",
+      "repeatable": true
+    },
+    "languagues": {
+      "type": "component",
+      "component": "launguages.languague",
+      "repeatable": true
+    }
+  }
+}

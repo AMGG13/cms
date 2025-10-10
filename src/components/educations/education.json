@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_educations_educations",
+  "info": {
+    "displayName": "education",
+    "icon": "seed"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "long_description": {
+      "type": "blocks"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

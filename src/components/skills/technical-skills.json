@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_skills_technical_skills",
+  "info": {
+    "displayName": "Sector Skill",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "sector_name": {
+      "type": "string"
+    },
+    "skill": {
+      "type": "component",
+      "component": "badgets.skill",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

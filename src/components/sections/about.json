@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_abouts",
+  "info": {
+    "displayName": "about"
+  },
+  "options": {},
+  "attributes": {
+    "id_section": {
+      "type": "string"
+    },
+    "section_title": {
+      "type": "string"
+    },
+    "greeting": {
+      "type": "string"
+    },
+    "download_cv_label": {
+      "type": "string"
+    },
+    "cv_file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}

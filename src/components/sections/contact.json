@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_sections_contacts",
+  "info": {
+    "displayName": "contact",
+    "icon": "cup"
+  },
+  "options": {},
+  "attributes": {
+    "id_section": {
+      "type": "string"
+    },
+    "section_title": {
+      "type": "string"
+    },
+    "contact_description": {
+      "type": "text"
+    },
+    "name_field_label": {
+      "type": "string"
+    },
+    "email_field_label": {
+      "type": "string"
+    },
+    "message_field_label": {
+      "type": "string"
+    },
+    "checkbox_field_label": {
+      "type": "string"
+    },
+    "submit_button_label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
