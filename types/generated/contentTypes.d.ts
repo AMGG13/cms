@@ -431,7 +431,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 }
 
 export interface ApiPersonalInfoformationPersonalInfoformation
-  extends Struct.CollectionTypeSchema {
+  extends Struct.SingleTypeSchema {
   collectionName: 'personal_infoformations';
   info: {
     displayName: 'Personal Infoformation';
@@ -441,31 +441,90 @@ export interface ApiPersonalInfoformationPersonalInfoformation
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    city: Schema.Attribute.String;
-    country: Schema.Attribute.String;
+    city: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    country: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    educations: Schema.Attribute.Component<'educations.education', true>;
+    educations: Schema.Attribute.Component<'educations.education', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     experience: Schema.Attribute.Component<
       'experiences.professional-experience',
       true
-    >;
-    languagues: Schema.Attribute.Component<'launguages.languague', true>;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    languagues: Schema.Attribute.Component<'launguages.languague', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::personal-infoformation.personal-infoformation'
-    > &
-      Schema.Attribute.Private;
-    name: Schema.Attribute.String;
-    professional_profile: Schema.Attribute.Text;
+    >;
+    name: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    professional_profile: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     publishedAt: Schema.Attribute.DateTime;
-    roles: Schema.Attribute.Component<'badgets.role', true>;
-    skills: Schema.Attribute.Component<'skills.technical-skills', true>;
-    social: Schema.Attribute.Component<'socials.social', true>;
-    surname: Schema.Attribute.String;
+    roles: Schema.Attribute.Component<'badgets.role', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    skills: Schema.Attribute.Component<'skills.technical-skills', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    social: Schema.Attribute.Component<'socials.social', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    surname: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
